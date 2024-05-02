@@ -277,6 +277,18 @@
   position: relative;
   gap: var(--gap-9xs);
 }
+.pieChartContainer {
+  width: 90vw; 
+  max-width: 400px;
+  margin: 0 auto; 
+  left: 0;
+}
+
+.pieChart {
+  width: 100%;
+  height: auto;
+}
+
 .performanceMetrics,
 .runDetails1 {
   align-self: stretch;

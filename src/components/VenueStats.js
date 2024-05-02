@@ -116,19 +116,19 @@ const VenueStats = () => {
               src="/arrow-up-key.svg"
             />
           </div>
-          <div className={styles.pieChartContainer}>
-  <PieChart 
-    series={[
-      {
-        data: [
-          { id: 0, value: 372, color:'#FF9933', label: 'Bat: 372 pts' },
-          { id: 1, value: 248, color:'yellow', label: 'Bowl: 248 pts' },
-        ],
-      },
-    ]}
-    width={400}
-    height={200}
-  />
+    <div style={{paddingRight:'800px'}} className={styles.pieChartContainer}>
+          <div class="pieChartContainer">
+  <svg viewBox="0 0 400 200" class="pieChart">
+  <circle cx="100" cy="100" r="80" fill="#FF9933" />
+<rect x="220" y="85" width="15" height="15" fill="#FF9933" />
+<text x="240" y="100">Bat: 372 pts</text>
+
+<path d="M100,100 L100,20 A80,80 0 0,1 180,100 Z" fill="yellow" />
+<rect x="220" y="105" width="15" height="15" fill="yellow" /> 
+<text x="240" y="120" >Bowl: 248 pts</text>
+    
+  </svg>
+</div>
 </div>
         </div>
         <div className={styles.tossTrend}>
