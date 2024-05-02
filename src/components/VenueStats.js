@@ -220,12 +220,7 @@ const VenueStats = () => {
           </div>
         </div>
       </div>
-      <div className={styles.tooltip}>
-        <div className={styles.content}>
-          <div className={styles.text}>This is a tooltip</div>
-        </div>
-        <img className={styles.tooltipIcon} alt="" src="/tooltip.svg" />
-      </div>
+     
     </section>
   );
 };

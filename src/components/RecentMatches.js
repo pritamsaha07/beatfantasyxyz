@@ -208,8 +208,7 @@ const RecentMatches = () => {
               />
             </div>
           </div>
-        </div>
-        <div className={styles.accordianRecentMatches1}>
+          <div className={styles.accordianRecentMatches1}>
           <div className={styles.teamInfo}>
             <div className={styles.afg1}>IND</div>
             <div className={styles.matchHistory1}>
@@ -237,13 +236,10 @@ const RecentMatches = () => {
             src="/arrow-down-key.svg"
           />
         </div>
-      </div>
-      <div className={styles.tooltip}>
-        <div className={styles.content}>
-          <div className={styles.text}>This is a tooltip</div>
         </div>
-        <img className={styles.tooltipIcon} alt="" src="/tooltip.svg" />
+        
       </div>
+  
     </section>
   );
 };
