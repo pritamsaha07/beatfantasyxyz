@@ -1,8 +1,66 @@
 import styles from "./VenueStats.module.css";
-import { PieChart } from '@mui/x-charts/PieChart';
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
+const constants={
+  BF_BASE_NODE_URL: 'https://s5oblntpd5.execute-api.us-east-1.amazonaws.com/prod/get-matches/cricket'
+,
+  headers: {
+    'Content-Type': 'application/json'
+    // Accept: 'application/json',
+  }
+}
 const VenueStats = () => {
+ 
+  const [error, setError] = useState(null);
+  const [matchData, setMatchData] = useState(null);
+  
+  const BFNodeClient = axios.create({
+    baseURL: constants.BF_BASE_NODE_URL,
+    headers: constants.headers,
+    withCredentials: false
+  });
+
+  async function getNodeRequest() {
+    try {
+      const response = await BFNodeClient.get();
+      const matchData = response.data; 
+      setMatchData(matchData);
+      console.log(matchData)
+    } catch (err) {
+      console.error('Get Request Error:', err);
+    }
+  }
+ 
+  useEffect(()=>{
+   getNodeRequest(constants.BF_BASE_NODE_URL);
+  },[]);
+  
+  
+
+ 
   return (
-    <section className={styles.venueStats}>
+   <>
+
+   <div className={styles.venueStats0}>
+   {matchData.map((match) => (
+        <div key={match.fixture_id} className={styles.match}>
+          <div className={styles.fixtureId}>Fixture ID: {match.fixture_id}</div>
+          <div className={styles.matchDetails}>
+            <div className={styles.homeTeam}>
+              <img src={match.home_team_logo}/>
+              <span>{match.home_team_name_short}</span>
+            </div>
+            <div className={styles.awayTeam}>
+              <img src={match.away_team_logo}/>
+              <span>{match.away_team_name_short}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+   </div>
+   <div className={styles.venueStats}>
+   
+   
       <div className={styles.locationDetails}>
         <div className={styles.location}>
           <div className={styles.venue}>Venue</div>
@@ -221,7 +279,10 @@ const VenueStats = () => {
         </div>
       </div>
      
-    </section>
+    </div>
+   </>
+    
+    
   );
 };
 

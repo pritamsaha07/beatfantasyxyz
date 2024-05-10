@@ -5,6 +5,35 @@
   font-weight: 600;
   color: var(--neutral-colors-black);
 }
+.matchDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.homeTeam,
+.awayTeam {
+  display: flex;
+  align-items: center;
+}
+
+.homeTeam img,
+.awayTeam img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.fixtureId {
+  font-size: 16px;
+  color: #333;
+}
+
 .bengaluruIndia {
   display: inline-block;
   min-width: 79px;
@@ -888,22 +917,13 @@
     var(--padding-2xs);
   white-space: nowrap;
 }
-.tooltipIcon {
-  width: 28px;
-  height: 6px;
-  position: relative;
-}
-.tooltip,
+
+
 .venueStats {
   flex-direction: column;
   justify-content: flex-start;
 }
-.tooltip {
-  box-shadow: var(--shadow-lg);
-  display: none;
-  align-items: flex-end;
-  color: var(--neutral-colors-white);
-}
+
 .venueStats {
   align-self: stretch;
   background-color: var(--neutral-colors-white);
@@ -915,4 +935,16 @@
   font-size: var(--body-xs-bold-size);
   color: var(--neutral-colors-gray-500);
   font-family: var(--body-xs-bold);
+}
+.venueStats0{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ .match {
+  flex: 0 0 calc(33.33% - 20px); 
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
