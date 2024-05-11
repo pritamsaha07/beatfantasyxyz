@@ -6,23 +6,7 @@ const AccordianRecentMatches = () => {
       <div className={styles.teamInformation}>
         <div className={styles.teamNameContainer}>
           <div className={styles.afg}>Recent H2H matches</div>
-          <div className={styles.winLossParent}>
-            <div className={styles.winLoss}>
-              <div className={styles.w}>W</div>
-            </div>
-            <div className={styles.winLoss1}>
-              <div className={styles.l}>L</div>
-            </div>
-            <div className={styles.winLoss2}>
-              <div className={styles.w1}>W</div>
-            </div>
-            <div className={styles.winLoss3}>
-              <div className={styles.l1}>L</div>
-            </div>
-            <div className={styles.winLoss4}>
-              <div className={styles.w2}>W</div>
-            </div>
-          </div>
+         
         </div>
         <img className={styles.arrowUpKeyIcon} alt="" src="/arrow-up-key.svg" />
       </div>

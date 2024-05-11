@@ -20,31 +20,31 @@ const PageStructure = () => {
           </div>
         </div>
         <div className={styles.tabsMaster1}>
-          <div className={styles.dummyIconParent}>
-            <img className={styles.dummyIcon} alt="" src="/dummy-icon.svg" />
+         
+            
             <div className={styles.contentArea}>
               <div className={styles.labelText1}><b>Prediction</b></div>
               
             </div>
-          </div>
+          
         </div>
         <div className={styles.tabsMaster1}>
-          <div className={styles.dummyIconParent}>
-            <img className={styles.dummyIcon} alt="" src="/dummy-icon.svg" />
+         
+            
             <div className={styles.contentArea}>
               <div className={styles.labelText1}><b>Stats</b></div>
               
             </div>
-          </div>
+          
         </div>
         <div className={styles.tabsMaster3}>
-          <div className={styles.dummyIconGroup}>
+        
             
             <div className={styles.labelTextParent}>
               <div className={styles.labelText3}><b>Experts</b></div>
               
             </div>
-          </div>
+          
         </div>
        
       </header>

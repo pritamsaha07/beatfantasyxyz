@@ -906,17 +906,6 @@
   font-weight: 600;
   display: inline-block;
 }
-.content {
-  border-radius: var(--br-5xs);
-  background-color: var(--neutral-colors-gray-500);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-5xs) var(--padding-3xs) var(--padding-5xs)
-    var(--padding-2xs);
-  white-space: nowrap;
-}
 
 
 .venueStats {

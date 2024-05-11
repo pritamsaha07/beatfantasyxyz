@@ -1087,28 +1087,13 @@
     var(--padding-2xs);
   white-space: nowrap;
 }
-.tooltipIcon {
-  width: 28px;
-  height: 6px;
-  position: relative;
-}
-.recentMatches,
-.tooltip {
+
+.recentMatches
+ {
   flex-direction: column;
   justify-content: flex-start;
 }
-.tooltip {
-  margin: 0 !important;
-  position: absolute;
-  top: -6.5px;
-  right: 6px;
-  box-shadow: var(--shadow-lg);
-  display: none;
-  align-items: flex-end;
-  z-index: 2;
-  font-size: var(--body-xs-bold-size);
-  color: var(--neutral-colors-white);
-}
+
 .recentMatches {
   align-self: stretch;
   background-color: var(--neutral-colors-white);
