@@ -1,0 +1,311 @@
+.totalLabel,
+.totalMatchesPlayed {
+  position: relative;
+  display: inline-block;
+}
+.totalMatchesPlayed {
+  line-height: 125%;
+  min-width: 114px;
+}
+.totalLabel {
+  font-size: var(--body-sm-medium-size);
+  font-weight: 500;
+  color: var(--neutral-colors-black);
+  min-width: 8px;
+}
+.matchFrequency {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 var(--padding-base);
+  gap: var(--gap-11xs);
+}
+.statisticDetailsIcon {
+  align-self: stretch;
+  height: 18px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.additionalStatsIcon {
+  width: 60.6px;
+  height: 56px;
+  position: absolute;
+  margin: 0 !important;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.statistics,
+.venueStats {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.venueStats {
+  flex: 1;
+  border-radius: var(--br-sm);
+  background-color: var(--neutral-colors-white);
+  border: 1px solid var(--stroke-gray-200);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-8xs) 0 0;
+  position: relative;
+  gap: var(--gap-9xs);
+}
+.statistics {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.averageLabel,
+.avgFantasyPoints {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.avgFantasyPoints {
+  line-height: 125%;
+  min-width: 74px;
+}
+.averageLabel {
+  font-size: var(--body-sm-medium-size);
+  color: var(--neutral-colors-black);
+  min-width: 27px;
+}
+.chartLabels {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.scoreBars,
+.scoreBars1 {
+  height: 6px;
+  position: relative;
+  border-radius: var(--br-5xs);
+}
+.scoreBars {
+  flex: 1;
+  background-color: var(--tonal-palette-orange-700);
+}
+.scoreBars1 {
+  width: 74.9px;
+  background-color: var(--tonal-palette-blue-700);
+}
+.teamScoresChart {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.markerShape {
+  width: 6px;
+  height: 6px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--tonal-palette-orange-700);
+}
+.teamMarkers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs-5) 0 0;
+}
+.teamA {
+  position: relative;
+  line-height: 13px;
+  display: inline-block;
+  min-width: 19px;
+}
+.teamLabels {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.teamB {
+  position: relative;
+  line-height: 13px;
+  display: inline-block;
+  min-width: 17px;
+}
+.teamMarker {
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 3px);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--tonal-palette-blue-700);
+}
+.barCharts,
+.secondTeamDetails,
+.teamComparison,
+.teamNames {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.secondTeamDetails {
+  margin: 0 !important;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: row;
+  padding: 0 var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-9xs);
+  color: var(--tonal-palette-blue-700);
+}
+.barCharts,
+.teamComparison,
+.teamNames {
+  align-self: stretch;
+}
+.teamNames {
+  flex-direction: row;
+  position: relative;
+  gap: var(--gap-221xl);
+}
+.barCharts,
+.teamComparison {
+  flex-direction: column;
+}
+.teamComparison {
+  padding: 0 0 var(--padding-8xs);
+  gap: var(--gap-9xs);
+  font-size: var(--body-xxs-regular-size);
+  color: var(--tonal-palette-orange-700);
+}
+.barCharts {
+  border-radius: var(--br-sm);
+  border: 1px solid var(--stroke-gray-200);
+  padding: var(--padding-3xs) var(--padding-mini);
+  gap: var(--gap-5xs);
+}
+.labelDetails,
+.textLabel {
+  position: relative;
+  display: inline-block;
+}
+.textLabel {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--body-xs-bold);
+  font-size: var(--body-xs-bold-size);
+  background-color: transparent;
+  align-self: stretch;
+  height: 15px;
+  line-height: 125%;
+  color: var(--neutral-colors-gray-500);
+  text-align: left;
+  min-width: 74px;
+  padding: 0;
+}
+.labelDetails {
+  font-weight: 500;
+  min-width: 8px;
+}
+.labelContainers,
+.venueStats1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.labelContainers {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base);
+  gap: var(--gap-11xs);
+}
+.venueStats1 {
+  flex: 1;
+  border-radius: var(--br-sm);
+  background-color: var(--neutral-colors-white);
+  border: 1px solid var(--stroke-gray-200);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-7xs) 0;
+}
+.div,
+.textLabel1 {
+  position: relative;
+  display: inline-block;
+}
+.textLabel1 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--body-xs-bold);
+  font-size: var(--body-xs-bold-size);
+  background-color: transparent;
+  align-self: stretch;
+  height: 15px;
+  line-height: 125%;
+  color: var(--neutral-colors-gray-500);
+  text-align: left;
+  min-width: 74px;
+  padding: 0;
+}
+.div {
+  font-weight: 500;
+  min-width: 8px;
+}
+.textLabelParent,
+.venueStats2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.textLabelParent {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base);
+  gap: var(--gap-11xs);
+}
+.venueStats2 {
+  flex: 1;
+  border-radius: var(--br-sm);
+  background-color: var(--neutral-colors-white);
+  border: 1px solid var(--stroke-gray-200);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-7xs) 0;
+}
+.matchStatsSummary,
+.statisticLabels {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--body-sm-medium-size);
+  color: var(--neutral-colors-black);
+}
+.matchStatsSummary {
+  flex-direction: column;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--body-xs-bold-size);
+  color: var(--neutral-colors-gray-500);
+  font-family: var(--body-xs-bold);
+}
